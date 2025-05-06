@@ -1,0 +1,4 @@
+sources:
+  electron-releases-35.1.5-wvcus.tar.gz: e8842c02a9cf1ad6cff0cf789f34542788191e56
+  castlabs-electron-releases-35.1.5+wvcus-node_modules.tar.gz: eba64bb71c4132e9a81ceb686073087d3a640b7c
+  castlabs-electron-releases-35.1.5+wvcus-pnpm_store.tar.gz: 45ee6b4230ae63425575ee016f71896ffbb0a091
