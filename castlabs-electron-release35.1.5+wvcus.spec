@@ -17,8 +17,8 @@ License:        MIT
 Group:          Development/Languages/Other
 URL:            https://github.com/castlabs/electron-releases
 Source0:        https://github.com/castlabs/electron-releases/archive/v%{version}+wvcus/%{name}-%{version}-wvcus.tar.gz
- Source1:        %{packagename}-node_modules.tar.gz
- Source2:        %{packagename}-pnpm_store.tar.gz
+Source1:        %{packagename}-pnpm_store.tar.gz
+Source2:        %{packagename}-cache.tar.gz
 
 BuildRequires:  nodejs
 BuildRequires:  nodejs-packaging
@@ -43,6 +43,7 @@ tar -zxf %{S:1}
 tar -zxf %{S:2}
 
 %install
+pnpm config set cache-dir %{_builddir}/%{name}-%{version}-wvcus/cache
 pnpm config set store-dir %{_builddir}/%{name}-%{version}-wvcus/pnpm_store
 pnpm install --offline --force
 cd dist
