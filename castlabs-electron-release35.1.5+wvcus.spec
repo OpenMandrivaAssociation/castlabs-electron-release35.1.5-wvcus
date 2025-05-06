@@ -23,9 +23,9 @@ Source0:        https://github.com/castlabs/electron-releases/archive/v%{version
 BuildRequires:  nodejs
 BuildRequires:  nodejs-packaging
 BuildRequires:  zip
+BuildRequires:  pnpm
 Requires:       bash
 Recommends:     python
-Provides:       npm(%{name}) = %{version}
 
 %description
 %summary
